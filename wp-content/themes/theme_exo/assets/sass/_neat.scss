@@ -1,0 +1,14 @@
+// Bourbon Neat
+@import "../../node_modules/bourbon-neat/core/_neat";
+
+$grid-columns: 24;
+$grid-gutters: 20px;
+$max-width: 1200px;
+$outer-container-margin: $grid-gutters;
+
+$neat-grid: (
+	columns: $grid-columns,
+	gutter: $grid-gutters,
+);
+
+@import "variables/media-queries";

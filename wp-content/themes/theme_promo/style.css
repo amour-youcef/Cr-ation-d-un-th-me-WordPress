@@ -1,0 +1,158 @@
+/*
+Theme Name: css1172
+Author: AMOUR DIT ZERROUK Youssouf
+Author URI: http://amourditzerrouk.com/
+Description:  thème modèle pour blog promo css117
+Version: 1.0
+Text Domain: css117
+*/
+
+body { background-color:#EEE4D2; }
+
+ul.machin-pager { list-style-type: none; padding-left:0; }
+
+.m-up-reset { margin-top:0!important;  }
+.m-up-20  {  margin-top:20px!important; }
+.m-dw-30  {  margin-bottom:30px!important; }
+
+
+
+.alignleft   { float:left; margin-right:2%;}
+.alignright  { float:right; margin-left:2%;}
+.aligncenter { margin:auto; display:block;}
+
+.wp-caption  { width:auto!important; }  
+
+.wp-caption a { max-width:768px; }
+
+.wp-caption.aligncenter a { display:block;    margin:auto; }
+.wp-caption.aligncenter img {   margin-left:auto; margin-right:auto; }
+
+.wp-caption-text { text-align: center; margin-top:5px; }
+
+
+
+
+dl.gallery-item img.attachment-thumbnail  {  height:auto; max-width:100%; }
+
+
+.card img { margin-bottom:15px; }
+
+.jumbotron  {  padding-top:24px; padding-bottom:12px;  }
+
+
+/* ------------------------------  */
+/*      Pages parent-enfants       */
+/* ------------------------------  */
+.menu-with-child { display:flex;  background-color: #f4f0eb; padding:5px 2%; margin-bottom:25px; }	
+.menu-with-child > a { flex-grow: 1; }
+.menu-with-child ul { display:flex; list-style-type: none; margin-bottom:5px; }
+.menu-with-child ul  li { margin-left:15px; }
+.menu-with-child ul li.current_page_item { font-weight:bold; }
+
+
+
+/* ------------------------------  */
+/*      slider carousel            */
+/* ------------------------------  */
+
+section#home-carousel  { background-color: #000;  }
+#slider-01 img {  margin: 15px auto; }
+/*
+#slider-01 .carousel-indicators li {  width: 15px;  height: 15px; }
+#slider-01 .carousel-indicators li.active {  width: 17px;  height: 17px; }
+*/
+#slider-01 .carousel-inner .carousel-item .carousel-caption {  bottom: 3%; text-shadow: 0 1px 2px rgba(0,0,0,.6); }
+
+.carousel-inner .carousel-item h3  {
+	animation-delay:0.4s;
+	font-size:2.2em;
+	font-weight:bold;
+}
+.carousel-inner .carousel-item p  {
+	animation-delay:1s;
+	font-size:1.2em;
+	background-color:rgba(0,0,0,0.35);
+	padding:10px 3%;
+}
+
+@media (max-width: 500px) {
+  #slider-01 .carousel-inner .carousel-item .carousel-caption {
+    width: 90%;
+    left: 5%;
+  }
+  #slider-01 .carousel-inner .carousel-item .carousel-caption p {
+    text-align: left;
+  }
+  #slider-01 .carousel-inner .carousel-item .carousel-caption a.btn {
+    padding: 3px 6px;
+  }
+}
+
+
+/* ------------------------------  */
+/*     4 medias en front page      */
+/* ------------------------------  */
+.media-front article .card  h1  {  font-size:1.15rem; }
+
+.media-front .card img {    margin-bottom: 0px;  }
+
+
+
+/* ------------------------------  */
+/*     Pagination du Blog          */
+/* ------------------------------  */
+.lgmac-pagination a, .lgmac-pagination span  { display:inline-block; padding:0 25px; margin-bottom:20px;  } 
+.lgmac-pagination a.prev  {  padding-left:0;  }
+.lgmac-pagination span.page-numbers.current   { background-color:#333;   color:#ddd;  }
+
+
+
+/* ------------------------------  */
+/*            Footer               */
+/* ------------------------------  */
+/* voir 852 px  */
+footer  { background-color:#CDDDC4;  margin-top:20px; padding-top:25px; padding-bottom:100px; }
+
+
+footer .wrap-widget > .inside-widget  { 	background-color:#BAC6BC;	border-radius:10px;
+	padding:10px 5%;	 margin-bottom:15px;   	}
+
+
+/**/
+
+@media screen and  (max-width: 767px) {
+	footer .wrap-widget > .inside-widget, section#blog-front .card    {   
+		max-width:400px; margin-left:auto; margin-right:auto;
+		}	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	footer .wrap-widget > .inside-widget  {   min-height:280px;   }	
+}
+
+/*
+@media screen and (min-width: 992px)  {
+	footer .wrap-widget > .inside-widget  {  min-height:270px;   }	
+}
+*/
+
+footer .wrap-widget > .inside-widget > h2  { margin-top:12px;	margin-bottom:15px;
+	padding-bottom:5px; border-bottom:1px solid black; font-size:1.15rem;	}
+
+
+footer .wrap-widget > .inside-widget caption { caption-side:top; }
+
+footer table#wp-calendar {	width:100%;	}
+
+footer table#wp-calendar  caption {	text-align:center; border-bottom:1px solid #cdcdcd;
+	padding-bottom:2px;  padding-top:0;  margin-bottom:6px;	}
+
+
+footer table#wp-calendar tfoot tr  td {	padding-top:10px;	}
+
+
+
+
+
+
